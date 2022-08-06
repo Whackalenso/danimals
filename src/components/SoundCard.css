@@ -2,8 +2,12 @@
     width: 200px;
     height: 260px;
     background-color: white;
+    border-radius: 8px;
 }
 
 img {
-    
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+    object-fit: cover;
 }
