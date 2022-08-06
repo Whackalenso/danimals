@@ -1,16 +1,15 @@
 import "./SoundCard.css";
-import piffle from "../images/piffle.jpg";
 
-export default function SoundCard(props) {
+export default function SoundCard({ animal }) {
   return (
     <div
       className="sound-card"
       onMouseEnter={() => {
-        console.log(props.animal);
+        console.log(animal.name);
       }}
     >
-      <img src={piffle} />
-      <p className="sound-card-subtitle">{props.animal}</p>
+      <img src="" />
+      <p className="sound-card-subtitle">{animal.name}</p>
     </div>
   );
 }
