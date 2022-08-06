@@ -1,5 +1,9 @@
 import "./SoundCard.css";
 
+const capitalize = (string) => {
+  return string.replace(/^\w/, (c) => c.toUpperCase());
+};
+
 export default function SoundCard({ animal }) {
   return (
     <div
@@ -8,8 +12,8 @@ export default function SoundCard({ animal }) {
         console.log(animal.name);
       }}
     >
-      <img src="" />
-      <p className="sound-card-subtitle">{animal.name}</p>
+      <img src={require(`../images/${animal.name}.jpg`)} />
+      <p className="sound-card-subtitle">{capitalize(animal.name)}</p>
     </div>
   );
 }

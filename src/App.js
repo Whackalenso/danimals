@@ -5,7 +5,7 @@ import animals from "./animals.json";
 function App() {
   var soundCards = [];
   for (var key in animals) {
-    soundCards.push(<SoundCard animal={animals[key]} />);
+    soundCards.push(<SoundCard animal={animals[key]} key={key} />);
   }
 
   return (
