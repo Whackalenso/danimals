@@ -9,14 +9,13 @@ export default function SoundCard({ animal }) {
     <div
       className="sound-card"
       onMouseEnter={() => {
-        console.log(animal.name);
+        console.log(animal);
       }}
     >
       <div className="sound-images">
-        <img src={require(`../images/${animal.name}.jpg`)} />
-        <img src={require(`../images/${animal.person}.png`)} />
+        <img src={require(`../images/${animal}.png`)} />
       </div>
-      <p className="sound-card-subtitle">{capitalize(animal.name)}</p>
+      <p className="sound-card-subtitle">{capitalize(animal)}</p>
     </div>
   );
 }

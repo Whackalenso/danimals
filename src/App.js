@@ -1,11 +1,41 @@
 import "./App.css";
 import SoundCard from "./components/SoundCard";
-import animals from "./animals.json";
+
+const animals = [
+  "bear",
+  "bee",
+  "bird",
+  "cat",
+  "cockroach",
+  "cow",
+  "dog",
+  "dolphin",
+  "eagle",
+  "elephant",
+  "fish",
+  "fox",
+  "frog",
+  "goat",
+  "goose",
+  "hippo",
+  "horse",
+  "owl",
+  "penguin",
+  "pig",
+  "platypus",
+  "rooster",
+  "seal",
+  "snake",
+  "t-rex",
+  "tucan",
+  "turkey",
+  "walrus",
+];
 
 function App() {
   var soundCards = [];
-  for (var key in animals) {
-    soundCards.push(<SoundCard animal={animals[key]} key={key} />);
+  for (var i = 0; i < animals.length; i++) {
+    soundCards.push(<SoundCard animal={animals[i]} key={i} />);
   }
 
   return (
