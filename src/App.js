@@ -6,15 +6,15 @@ function App() {
     <div className="App">
       <h1 className="title">Daniel Animal Translator</h1>
       <div className="sound-cards">
-        <SoundCard />
-        <SoundCard />
-        <SoundCard />
-        <SoundCard />
-        <SoundCard />
-        <SoundCard />
-        <SoundCard />
-        <SoundCard />
-        <SoundCard />
+        <SoundCard animal="penguin" />
+        <SoundCard animal="penguin" />
+        <SoundCard animal="penguin" />
+        <SoundCard animal="penguin" />
+        <SoundCard animal="penguin" />
+        <SoundCard animal="penguin" />
+        <SoundCard animal="penguin" />
+        <SoundCard animal="penguin" />
+        <SoundCard animal="penguin" />
       </div>
     </div>
   );

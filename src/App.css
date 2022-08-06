@@ -17,6 +17,8 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 800px;
+  height: 80vh;
+  overflow-y: scroll;
   
   position: absolute;
   left: 50%;
