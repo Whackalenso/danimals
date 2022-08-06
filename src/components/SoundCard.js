@@ -12,7 +12,10 @@ export default function SoundCard({ animal }) {
         console.log(animal.name);
       }}
     >
-      <img src={require(`../images/${animal.name}.jpg`)} />
+      <div className="sound-images">
+        <img src={require(`../images/${animal.name}.jpg`)} />
+        <img src={require(`../images/${animal.person}.png`)} />
+      </div>
       <p className="sound-card-subtitle">{capitalize(animal.name)}</p>
     </div>
   );
