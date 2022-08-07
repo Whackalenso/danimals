@@ -14,7 +14,7 @@ export default function SoundCard({ animal }) {
       onMouseEnter={() => {
         console.log(animal);
       }}
-      onClick={PlaySound()}
+      onClick={PlaySound}
     >
       <div className="sound-images">
         <img src={require(`../images/${animal}.png`)} />
