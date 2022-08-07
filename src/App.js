@@ -42,7 +42,7 @@ function App() {
 }
 return (
     <div className="App">
-      <section classNam="Info">
+      <section className="Info">
         <h1 className="title">Danimals</h1>
         <h3 className="description">Hover / Click on an animal to here what it sounds like</h3>
       </section>
