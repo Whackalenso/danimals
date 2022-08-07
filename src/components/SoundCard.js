@@ -8,22 +8,22 @@ const capitalize = (string) => {
 
 export default function SoundCard({ animal }) {
   const [play, setPlay] = useState(false);
+  const [player, setPlayer] = useState(null);
 
   return (
     <div>
       <ReactHowler
         src={`/audio/${animal}/${animal}_1.m4a`}
         playing={play}
-        onStop={() => {
+        onEnd={() => {
           setPlay(false);
         }}
+        ref={(ref) => setPlayer(ref)}
       />
       <div
         className="sound-card"
-        onMouseEnter={() => {
-          console.log(animal);
-        }}
         onClick={() => {
+          player.seek(0);
           if (!play) {
             setPlay(true);
           }
