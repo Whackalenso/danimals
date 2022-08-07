@@ -43,9 +43,10 @@ function App() {
     <div className="App">
       <section className="Info">
         <h1 className="title">Danimals</h1>
-        <h3 className="description">
-          Hover / Click on an animal to here what it sounds like
-        </h3>
+        <h3 className="description"><i>
+          Click on an animal to hear what it sounds like
+       </i></h3>
+        <h6 className="love">Made with <span className="emogi">☕️</span>  by Ajith, Daniel, and Nigel, during Assemble 2022 in 48 hours</h6>
       </section>
       <div className="sound-cards">{soundCards}</div>
     </div>

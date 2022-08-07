@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
 html {
- /*overflow: hidden;*/
+ overflow: hidden;
 }
 
 .app {
@@ -14,7 +16,7 @@ html {
 }
 
 .title {
-  font-family: "Jost";
+  font-family: 'Work Sans', sans-serif;
   font-size: 42px;
   text-align: center;
   font-weight: 300;
@@ -23,25 +25,26 @@ html {
 }
 
 .description {
-  font-family: "Jost";
+  font-family: 'Work Sans', sans-serif;
   font-size: 20px;
   text-align: center;
   color: white;
 }
 
 .sound-cards {
-  font-family: "Jost";
+  font-family: 'Work Sans', sans-serif;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  flex-basis: 30%;
   justify-content: center;
-  width: 800px;
   overflow-y: scroll;
   
   padding-top:40px;
-  padding-bottom: 50px;
+  height: 60vh;
+  padding-bottom: 40px;
 
-  mask-image: linear-gradient(to top, black calc(100% - 50px), transparent 100%),  linear-gradient(to bottom, black calc(100% - 50px), transparent 100%);;
+  mask-image: linear-gradient(to top, black calc(100% - 50px), transparent 100%);
 
   position: absolute;
   left: 50%;
@@ -50,6 +53,19 @@ html {
    -ms-overflow-style: none; /* for Internet Explorer, Edge */
    scrollbar-width: none; /* for Firefox */
    overflow-y: scroll;
+}
+
+.love {
+  margin:10px;
+
+  font-family: 'Work Sans', sans-serif;
+  font-size: 10pt;
+  text-align: center;
+  color: white;
+}
+
+.emogi {
+  font-size: 20pt;
 }
 
 .sound-cards::-webkit-scrollbar {
