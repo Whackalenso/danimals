@@ -36,10 +36,9 @@ const animals = [
 
 function App() {
   var soundCards = [];
-  var Speaker = <audio id="speaker"></audio>;
   for (var i = 0; i < animals.length; i++) {
     soundCards.push(
-      <SoundCard animal={animals[i]} key={i} speaker={Speaker} />
+      <SoundCard animal={animals[i]} key={i} />
     );
   }
   return (
