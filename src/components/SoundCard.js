@@ -4,7 +4,12 @@ const capitalize = (string) => {
   return string.replace(/^\w/, (c) => c.toUpperCase());
 };
 
-export default function SoundCard({ animal }) {
+export default function SoundCard({ animal, speaker }) {
+  function PlaySound(file){
+    var audio = new Audio();
+    audio.play();
+  }
+
   return (
     <div
       className="sound-card"

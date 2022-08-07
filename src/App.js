@@ -34,13 +34,16 @@ const animals = [
 
 function App() {
   var soundCards = [];
+  var Speaker = <audio id="speaker"></audio>
   for (var i = 0; i < animals.length; i++) {
-    soundCards.push(<SoundCard animal={animals[i]} key={i} />);
-  }
-
-  return (
+    soundCards.push(<SoundCard animal={animals[i]} key={i} speaker={Speaker} />);
+}
+return (
     <div className="App">
-      <h1 className="title">Daniel Animal Translator</h1>
+      <section classNam="Info">
+        <h1 className="title">Danimals</h1>
+        <h3 className="description">Hover / Click on an animal to here what it sounds like</h3>
+      </section>
       <div className="sound-cards">{soundCards}</div>
     </div>
   );
