@@ -13,6 +13,7 @@ export default function SoundCard({ animal }) {
   return (
     <div>
       <ReactHowler
+        html5='false'
         src={`/audio/${animal}/${animal}_1.m4a`}
         playing={play}
         onEnd={() => {
