@@ -46,7 +46,7 @@ function App() {
         <h3 className="description"><i>
           Click on an animal to hear what it sounds like
        </i></h3>
-        <h6 className="love">Made with <span className="emogi">☕️</span>  by Ajith, Daniel, and Nigel, during Assemble 2022 in 48 hours</h6>
+        <h6 className="love">Made with <span className="emogi">☕️</span>  by Ajith, Daniel, and Nigel, during <a href="https://github.com/hackclub/assemble" target="_blank">Assemble</a> 2022 in 48 hours</h6>
       </section>
       <div className="sound-cards">{soundCards}</div>
     </div>

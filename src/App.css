@@ -64,6 +64,16 @@ html {
   color: white;
 }
 
+a {
+  font-size: inherit;
+  color: white;
+  text-decoration: 2px red underline;
+}
+
+a:hover {
+  background-color: #fa525252;
+}
+
 .emogi {
   font-size: 20pt;
 }
